@@ -1,0 +1,24 @@
+local Player = game.Players.LocalPlayer
+local Character = game.Players.LocalPlayer.Character
+local Mouse = Player:GetMouse()
+ 
+Dodge1 = script.Dodge1
+Dodge2 = script.Dodge2
+ 
+--//Ultra Instinct Dodge1 and 2
+ 
+Mouse.KeyDown:connect(function(Key)
+    if Key == "q" then
+        print("Dodge1 Activated")
+        m = Player.Character.Humanoid:LoadAnimation(Dodge1)
+        m:Play()
+    end
+end)
+ 
+Mouse.KeyDown:connect(function(Key)
+    if Key == "e" then
+        print("Dodge2 Activated")
+        m = Player.Character.Humanoid:LoadAnimation(Dodge2)
+        m:Play()
+    end
+end)
